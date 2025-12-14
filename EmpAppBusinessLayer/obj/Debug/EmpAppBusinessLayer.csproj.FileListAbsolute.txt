@@ -1,0 +1,6 @@
+C:\Users\BK\source\repos\EmployeeAppAssesment\EmpAppBusinessLayer\bin\Debug\EmpAppBusinessLayer.dll
+C:\Users\BK\source\repos\EmployeeAppAssesment\EmpAppBusinessLayer\bin\Debug\EmpAppBusinessLayer.pdb
+C:\Users\BK\source\repos\EmployeeAppAssesment\EmpAppBusinessLayer\obj\Debug\EmpAppBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\BK\source\repos\EmployeeAppAssesment\EmpAppBusinessLayer\obj\Debug\EmpAppBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\BK\source\repos\EmployeeAppAssesment\EmpAppBusinessLayer\obj\Debug\EmpAppBusinessLayer.dll
+C:\Users\BK\source\repos\EmployeeAppAssesment\EmpAppBusinessLayer\obj\Debug\EmpAppBusinessLayer.pdb
