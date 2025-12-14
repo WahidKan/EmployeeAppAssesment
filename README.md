@@ -11,7 +11,7 @@ The database is designed to handle:
 
 - Employee records (personal details, date of birth, address)
 - Employee tasks with due dates and descriptions
-- CRUD operations through stored procedures and business layer methods
+- Efficient CRUD operations through stored procedures and business layer abstraction
 
 ---
 
