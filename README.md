@@ -17,6 +17,49 @@ The database is designed to handle:
 
 ## Database Design
 
+# Key Features
+- Transaction-safe task management
+- Batch operations support
+- Error handling
+
+# Stored Procedure
+
+ALTER PROCEDURE [dbo].[SaveEmployeeTasks]
+(
+    @EmployeeId INT,
+    @Tasks dbo.EmployeeTaskType READONLY
+)
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        INSERT INTO EmployeeTask
+        (
+            EmployeeId,
+            Name,
+            Description,
+            DueDate
+        )
+        SELECT
+            @EmployeeId,
+            Name,
+            Description,
+            DueDate
+        FROM @Tasks;
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        IF @@TRANCOUNT > 0
+            ROLLBACK TRANSACTION;
+
+        THROW;
+    END CATCH
+END;
+
 ### Tables
 
 1. **Employee**
