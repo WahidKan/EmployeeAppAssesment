@@ -60,9 +60,19 @@ BEGIN
         THROW;
     END CATCH
 END;
- 
+ ```
 
-### Tables
+# User Defined Table
+
+```sql
+CREATE TYPE dbo.EmployeeTaskType AS TABLE
+(
+    Name VARCHAR(50),
+    Description VARCHAR(150),
+    DueDate DATETIME
+);
+
+ ```
 
 1. **Employee**
 
